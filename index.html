@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon_package/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon_package/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon_package/favicon-16x16.png">
+<link rel="manifest" href="./favicon_package/site.webmanifest">
+<link rel="mask-icon" href="./favicon_package/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles1.css">
+    <link rel="manifest" href="manifest.json">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js" defer></script>
+    <title>Radiant Medical Center</title>
+</head>
+<body>
+  
+  
+    <div class="wrapper">
+  
+        <div class="top_navbar">
+          <div class="hamburger">
+             <div class="one"></div>
+             <div class="two"></div>
+             <div class="three"></div>
+                    
+          </div>
+          <div class="top_menu">
+              <div class="logo">
+                  <img src="images/Screenshot 2024-09-03 at 12.00.51 PM.png" alt="LOGO">
+              </div>
+              <ul>
+                <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                <li><a href="#"><i class="fas fa-user"></i></a></li>
+              </ul>
+          </div>
+        </div>
+        
+        <div class="sidebar">
+          <ul>
+            <li><a href="index.html" class="active"></i></span><span class="title">Home</span></a></li>
+            <li><a href="services.html"></i></span><span class="title">Services</span></a></li>
+            <li><a href="doctors.html"></i></span><span class="title">Doctors</span></a></li>
+            <li><a href="consultaion.html"></i></span><span class="title">Consultation</span></a></li>
+            <li><a href="pharmacy.html"></i></span><span class="title">Pharmacy</span></a></li>
+            <li><a href="careers.html"></i></span><span class="title">Careers</span></a></li>
+            <li><a href="about.html"></i></span><span class="title">About us</span></a></li>
+          </ul>
+        </div>
+
+    
+        <!-- New section for text and video -->
+        <div>
+          <video autoplay muted loop>
+              <source src="images/Here For You - TV Spot - November 2022 copy.mp4" type="video/mp4">
+          </video>
+          <div class="overlay">
+              <p>Radiant Medical Center:</p>
+              <p>Where Compassion Meets</p>
+              <p>Cutting-Edge Healthcare Excellence.</p>
+          </div>
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              const hamburger = document.querySelector('.hamburger');
+              const sidebar = document.querySelector('.sidebar');
+              const overlay = document.createElement('div'); // Create the overlay element
+              overlay.classList.add('overlay');
+              document.body.appendChild(overlay); // Add it to the document body
+          
+              hamburger.addEventListener('click', function() {
+                sidebar.classList.toggle('active');
+                overlay.classList.toggle('active'); // Toggle the overlay when the sidebar is toggled
+              });
+          
+              // Close the sidebar if overlay is clicked
+              overlay.addEventListener('click', function() {
+                sidebar.classList.remove('active');
+                overlay.classList.remove('active');
+              });
+            });
+          </script>
+      </div>
+    
+      <section> 
+          <div class="welcome-section">
+              <h1>Welcome</h1>
+              <p>Welcome to Radiant Medical Center, where your health and well-being are our top priorities. 
+                We offer state-of-the-art medical care with a compassionate touch. Our dedicated team of professionals is here to provide personalized, 
+                comprehensive services tailored to your needs, ensuring you receive the highest quality care in a warm, welcoming environment.</p>
+          </div>
+      </section> 
+
+
+      <section class="what-we-offer">
+        <h1>What we offer</h1>
+        <div class="content">
+          <p>Radiant Medical Center offers comprehensive healthcare services, including advanced diagnostics, specialized treatments, and routine check-ups.
+            Our team of experienced doctors and specialists is dedicated to providing personalized care tailored to individual needs, ensuring the highest standards of medical excellence and patient comfort.</p>
+           <br><p> In addition to medical consultations, we provide a range of support services such as pharmacy, laboratory tests, and preventive health programs.
+            Our commitment is to enhance overall wellness and support the community with accessible, quality healthcare.</p> 
+          <img src="images/download.jpeg" alt="Radiant Hospital Australia">
+        </div>
+
+
+      <section>
+        <div class="what-we-do">
+          <h1>What we do here</h1>
+          <p>At Radiant Medical Center, we are committed to providing comprehensive and compassionate healthcare services.
+             Our state-of-the-art facility is equipped with advanced medical technology, allowing us to offer a wide range of diagnostic and treatment options.
+              From routine check-ups to specialized procedures, our skilled team of doctors and healthcare professionals work tirelessly to ensure each patient receives personalized care tailored to their specific needs.</p>
+          <br><p>In addition to our core medical services, we also focus on patient education and wellness programs designed to promote long-term health and well-being.
+             Our community outreach initiatives provide valuable resources and support, helping individuals make informed decisions about their health.
+              At Radiant Medical Center, we strive to create a supportive environment where every patient feels valued and confident in their healthcare journey.</p> 
+          <img src="images/doctors care.webp" alt="Hospital lobby">   
+        </div>
+      </section>
+
+      <section>
+        <div class="our-rating">
+          <h1>Our Rating</h1>
+          <p>Over the past year, Radiant Medical Center has proudly achieved a 4 star rating, reflecting our dedication to exceptional patient care.
+             We’ve consistently provided top-notch medical services, from routine check-ups to advanced treatments, ensuring that every patient receives personalized attention and care.</p>
+          <br><p>This impressive rating highlights our commitment to quality and patient satisfaction. As we move forward, we remain focused on maintaining these high standards, continuing to offer trusted and compassionate care to the community.</p> 
+  
+          <img src="images/pastiont satisfaction.jpg" alt="pastiont satisfaction">
+          
+        </div>
+      </section>
+
+      <section>
+        <div class="top-doctors">
+          <h1>Our Top Doctors</h1>
+          <ul type="bullet">
+            <li>Dr. Naifa Afeef</li>
+            <li>Dr. Shfffrestha Lahouti</li>
+            <li>Dr. Sama Haleem</li>
+          </ul>  
+        </div>
+      </section>
+      
+      <section>
+        <div class="top-doctors">
+          <h1>Our Top Nurses</h1>
+          <ol type="bullet">
+            <li>Moyra Allen</li>
+            <li>Allen Allensworth</li>
+            <li>Charles Atangana</li>
+          </ol>  
+        </div>
+      </section>
+
+      <footer style="background-color: #f8f9fa; padding: 20px 0; border-top: 2px solid #007bff;">
+        <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: auto;">
+          <!-- Logo on the Left -->
+          <div>
+            <img src="images/Screenshot 2024-09-03 at 12.00.51 PM.png" alt="Radiant Medical Center Logo" style="height: 50px;">
+          </div>
+      
+          <!-- Contact Information in the Center -->
+          <div style="text-align: center;">
+            <h3 style="margin-bottom: 10px;">Contact Us</h3>
+            <ul style="list-style-type: none; padding: 0; margin: 0;">
+              <li>Phone: +94 771321321</li>
+              <li>Phone: +94 771321321</li>
+              <li>Email: info@radiantmedical.com</li>
+              <li>Email: support@radiantmedical.com</li>
+            </ul>
+          </div>
+      
+          <!-- Social Media Icons on the Right -->
+          <div>
+            <a href="#" style="margin: 0 10px;"><img src="images/facebook icon.webp" alt="Facebook" style="height: 30px;"></a>
+            <a href="#" style="margin: 0 10px;"><img src="images/x icon.webp" alt="Twitter" style="height: 30px;"></a>
+            <a href="#" style="margin: 0 10px;"><img src="images/instergram icon.webp" alt="Instagram" style="height: 30px;"></a>
+            <a href="#" style="margin: 0 10px;"><img src="images/linked in logo.webp" alt="LinkedIn" style="height: 30px;"></a>
+          </div>
+        </div>
+      </footer>
+
+      
+
+
+</body>
+</html>

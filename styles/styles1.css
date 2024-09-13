@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
+
+* {
+  margin-right: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #e1ecf2;
+  margin-left: 15%; /* Adjusted for desktop */
+  list-style: none;
+}
+
+.wrapper {
+  margin: 10px;
+  
+}
+
+.wrapper .top_navbar {
+  width: calc(100% - 20px);
+  height: 60px;
+  display: flex;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.wrapper .top_navbar .hamburger {
+  width: 70px;
+  height: 100%;
+  background: #2e4ead;
+  padding: 15px 17px;
+  border-top-left-radius: 20px;
+  cursor: pointer;
+}
+
+.wrapper .top_navbar .hamburger div {
+  width: 35px;
+  height: 4px;
+  background: #92a6e2;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.wrapper .top_navbar .top_menu {
+  width: calc(100% - 70px);
+  height: 100%;
+  background: #fff;
+  border-top-right-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .top_navbar .top_menu .logo {
+  height: 100%;
+}
+
+.wrapper .top_navbar .top_menu .logo img {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+
+.wrapper .top_navbar .top_menu ul {
+  display: flex;
+}
+
+.wrapper .top_navbar .top_menu ul li a {
+  display: block;
+  margin: 0 10px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border: 1px solid #2e4ead;
+  border-radius: 50%;
+  color: #2e4ead;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.wrapper .top_navbar .top_menu ul li a:hover {
+  background: #4360b5;
+  color: #fff;
+}
+
+.wrapper .sidebar {
+  position: fixed;
+  top: 70px;
+  left: 10px;
+  background: #2e4ead;
+  width: 200px;
+  height: calc(100% - 80px);
+  border-bottom-left-radius: 20px;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.wrapper .sidebar ul li a {
+  display: block;
+  padding: 20px;
+  color: #92a6e2;
+  margin-bottom: 1px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active {
+  background: #4360b5;
+  color: #fff;
+}
+
+.content_center {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.content_center h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #2e4ead;
+}
+
+video {
+  margin-left: 5%;
+  margin-top: 10%;
+  width: 90%; /* Adjusted to fit better on various screens */
+  height: auto;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  margin-top: 15%;
+  margin-left: 25%;
+  width: 90%;
+  height: auto;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.overlay p {
+  font-size: 30px;
+  color: #2e4ead;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-section {
+  margin-top: 30px; /* Adds space between the video and the welcome section */
+  padding: 20px;
+  border-radius: 12px; /* Adds rounded corners */
+  background-color: #f9f9f9;
+}
+
+.welcome-section h1 {
+  text-align: center;
+  color: #2e4ead;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.welcome-section p {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.what-we-offer {
+  margin-top: 50px; /* Adds space between the video and the welcome section */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px; /* Adds rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.what-we-offer h1 {
+  text-align: center;
+  color: #2e4ead;
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: bold; /* Makes the heading bold */
+}
+
+.what-we-offer p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+  text-align: center; /* Centers the text */
+  max-width: 800px; /* Limits the width of the paragraph for better readability */
+  margin: 0 auto; /* Centers the paragraph block */
+}
+.what-we-offer img {
+  margin-top: 20px;
+  display: block; /* Makes the image a block-level element */
+  margin: 0 auto; /* Centers the image horizontally */
+  max-width: 40%; /* Ensures the image scales down if necessary */
+  height: auto; /* Maintains the aspect ratio */
+}
+
+
+.what-we-do {
+  margin-top: 50px; /* Adds space between the video and the welcome section */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px; /* Adds rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.what-we-do h1 {
+  text-align: center;
+  color: #2e4ead;
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: bold; /* Makes the heading bold */
+}
+
+.what-we-do p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+  text-align: center; /* Centers the text */
+  max-width: 800px; /* Limits the width of the paragraph for better readability */
+  margin: 0 auto; /* Centers the paragraph block */
+}
+.what-we-do img {
+  margin-top: 20px;
+  display: block; /* Makes the image a block-level element */
+  margin: 0 auto; /* Centers the image horizontally */
+  max-width: 40%; /* Ensures the image scales down if necessary */
+  height: auto; /* Maintains the aspect ratio */
+}
+
+.our-rating {
+  margin-top: 30px; /* Adds space between the video and the welcome section */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px; /* Adds rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.our-rating h1 {
+  text-align: center;
+  color: #2e4ead;
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: bold; /* Makes the heading bold */
+}
+
+.our-rating p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+  text-align: center; /* Centers the text */
+  max-width: 800px; /* Limits the width of the paragraph for better readability */
+  margin: 0 auto; /* Centers the paragraph block */
+}
+
+.our-rating img {
+  margin-top: 20px;
+  display: block; /* Makes the image a block-level element */
+  margin: 0 auto; /* Centers the image horizontally */
+  max-width: 40%; /* Ensures the image scales down if necessary */
+  height: auto; /* Maintains the aspect ratio */
+}
+
+.top-doctors {
+  margin-top: 30px; /* Adds space between the video and the welcome section */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px; /* Adds rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.top-doctors h1 {
+  text-align: center;
+  color: #2e4ead;
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: bold; /* Makes the heading bold */
+}
+
+.top-doctors ul {
+  font-size: 16px;
+  line-height: 1.5;
+  color: black;
+  text-align: center; /* Centers the text */
+  max-width: 260px; /* Limits the width of the paragraph for better readability */
+  margin: 0 auto; /* Centers the paragraph block */
+}
+
+.top-doctors ol {
+  font-size: 16px;
+  line-height: 1.5;
+  color: black;
+  text-align: center; /* Centers the text */
+  max-width: 260px; /* Limits the width of the paragraph for better readability */
+  margin: 0 auto; /* Centers the paragraph block */
+}
+
+
+.top-doctors img {
+  margin-top: 20px;
+  display: block; /* Makes the image a block-level element */
+  margin: 0 auto; /* Centers the image horizontally */
+  max-width: 100%; /* Ensures the image scales down if necessary */
+  height: auto; /* Maintains the aspect ratio */
+}
+
+footer {
+  margin-top: 30px; /* Adds space between the video and the welcome section */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px; /* Adds rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+footer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+footer img {
+  height: 50px;
+}
+
+footer h3 {
+  margin-bottom: 100px;
+  font-size: 1.5rem;
+  color: #2e4ead;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: #333;
+  line-height: 1.5;
+}
+
+footer li {
+  margin: 0;
+}
+
+footer a {
+  margin: 0 10px;
+}
+
+footer a img {
+  height: 30px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  body {
+    margin-top: 10%;
+    margin-left: 0;
+  }
+
+  .wrapper .sidebar {
+    left: -200px;
+    transition: left 0.3s ease;
+  }
+
+  .wrapper .sidebar.active {
+    left: 0;
+  }
+
+  .wrapper .top_navbar {
+    left: 0;
+    width: 100%;
+  }
+
+  .overlay {
+    margin-right: 5%;
+    display: none;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+
+  video {
+    width: 100%; /* Ensures video scales on smaller devices */
+  }
+
+  .overlay {
+    margin-left: 0; /* Overlay centered on mobile */
+    width: 100%;
+    text-align: center; /* Centered text */
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+  }
+
+  footer div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer img {
+    height: 45px;
+    margin-bottom: 15px;
+  }
+
+  footer h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #2e4ead;
+  }
+
+  footer ul {
+    padding: 0;
+    margin: 20px 0;
+    list-style-type: none;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  footer li {
+    margin: 10px 0;
+  }
+
+  footer a {
+    margin: 5px 15px;
+    font-size: 0.95rem;
+    color: #2e4ead;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  footer a img {
+    height: 25px;
+    margin: 0 5px;
+  }
+
+  /* Social media icons in a single row */
+  footer .social-media {
+    display: flex;
+    justify-content: right; /* Center the social media icons */
+    gap: 10px; /* Add space between icons */
+    margin-top: 15px;
+  }
+
+  footer .social-media a {
+    display: inline-block;
+  }
+}
