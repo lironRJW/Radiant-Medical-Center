@@ -2,12 +2,13 @@ self.addEventListener('install', function(event) {
     event.waitUntil(
       caches.open('my-cache').then(function(cache) {
         return cache.addAll([
-          '/',
-          '/index.html',
-          '/styles/styles1.css',
-          '/styles/styles2.css',
-          '/script.js',
-          '/favicon_package/android-chrome-192x192.png'
+          '/Radiant-Medical-Center/',
+          '/Radiant-Medical-Center/index.html',
+          '/Radiant-Medical-Center/styles/styles1.css',
+          '/Radiant-Medical-Center/styles/styles2.css',
+          '/Radiant-Medical-Center/script.js',
+          '/Radiant-Medical-Center/favicon_package/android-chrome-32x32.png',
+          '/Radiant-Medical-Center/favicon_package/android-chrome-16x16.png',
         ]);
       })
     );
