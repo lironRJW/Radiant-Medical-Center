@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background for ocean theme */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    color: #0077b6; /* Ocean blue color */
+    font-size: 2rem; /* Smaller font size for mobile */
+}
+
+p {
+    font-size: 1.2rem; /* Smaller font size for mobile */
+    margin-top: 1rem;
+}
+
+.delivery-date {
+    color: #0077b6;
+    font-weight: bold;
+}
+
+.btn {
+    margin-top: 2rem;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #0077b6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #005f8a;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem; /* Adjust font size for smaller screens */
+    }
+
+    p {
+        font-size: 1rem; /* Adjust font size for better readability */
+        padding: 0 15px; /* Add padding for mobile readability */
+    }
+
+    .btn {
+        padding: 12px 25px; /* Make button a bit larger */
+        font-size: 1.2rem; /* Adjust font size for button */
+    }
+}

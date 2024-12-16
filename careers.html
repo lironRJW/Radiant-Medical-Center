@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon_package/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon_package/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon_package/favicon-16x16.png">
+<link rel="manifest" href="./favicon_package/site.webmanifest">
+<link rel="mask-icon" href="./favicon_package/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Radiant Medical Center</title>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js" defer></script>
+    <script>script.js</script>
+</head>
+<body>
+
+<div class="wrapper">
+  
+  <div class="top_navbar">
+    <div class="hamburger">
+       <div class="one"></div>
+       <div class="two"></div>
+       <div class="three"></div>
+    </div>
+    <div class="top_menu">
+        <div class="logo">
+            <img src="images/Screenshot 2024-09-03 at 12.00.51 PM.png" alt="LOGO">
+        </div>
+        <ul>
+          <li><a href="#"><i class="fas fa-bell"></i></a></li>
+          <li><a href="#"><i class="fas fa-user"></i></a></li>
+        </ul>
+    </div>
+  </div>
+  
+  <div class="sidebar">
+    <ul>
+      <li><a href="index.html"><span class="title">Home</span></a></li>
+      <li><a href="services.html"><span class="title">Services</span></a></li>
+      <li><a href="doctors.html"><span class="title">Doctors</span></a></li>
+      <li><a href="consultaion.html"><span class="title">Consultation</span></a></li>
+      <li><a href="pharmacy.html"><span class="title">Pharmacy</span></a></li>
+      <li><a href="careers.html" class="active"><span class="title">Careers</span></a></li>
+      <li><a href="about.html"><span class="title">About us</span></a></li>
+    </ul>
+  </div>
+
+
+
+
+
+<div class="container">
+    <div class="content">
+      <div>
+      <h1>Careers at Radiant Medical Center</h1>
+    </div>
+        <p>At Radiant Medical Center, we are dedicated to providing exceptional healthcare while fostering a supportive and inclusive work environment. Our team is made up of over 200 professionals across various disciplines, all working together to deliver outstanding patient care. We believe in investing in our staff through ongoing training and career development opportunities.</p>
+
+        <div class="stats">
+          <div>
+              <div class="stats-icon">👨‍⚕️</div>
+              <h2>Staff Members</h2>
+              <p>200+</p>
+              <p>Healthcare Professionals</p>
+          </div>
+          <div>
+              <div class="stats-icon">🏥</div>
+              <h2>Departments</h2>
+              <p>15</p>
+              <p>Specialties</p>
+          </div>
+          <div>
+              <div class="stats-icon">📚</div>
+              <h2>Annual Training Hours</h2>
+              <p>15,000</p>
+              <p>Hours</p>
+          </div>
+      </div>
+
+        <div class="staff-list">
+            <h2>Meet Our Team</h2>
+            <ul>
+                <li>Dr. Alice Johnson - Chief Medical Officer</li>
+                <li>Dr. Robert Smith - Head of Surgery</li>
+                <li>Dr. Emily Davis - Pediatric Specialist</li>
+                <li>Nurse Linda Brown - Lead Nurse</li>
+                <li>Dr. Michael Wilson - Cardiologist</li>
+                <li>Dr. Sarah Lee - Dermatologist</li>
+                <li>Dr. Daniel Martinez - Orthopedic Surgeon</li>
+                <li>Dr. Laura Gonzalez - Neurologist</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<footer style="background-color: #f8f9fa; padding: 20px 0; border-top: 2px solid #007bff;">
+  <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: auto;">
+    <!-- Logo on the Left -->
+    <div>
+      <img src="images/Screenshot 2024-09-03 at 12.00.51 PM.png" alt="Radiant Medical Center Logo" style="height: 50px;">
+    </div>
+
+    <!-- Contact Information in the Center -->
+    <div style="text-align: center;">
+      <h3 style="margin-bottom: 10px;">Contact Us</h3>
+      <ul style="list-style-type: none; padding: 0; margin: 0;">
+        <li>Phone: +94 771321321</li>
+        <li>Phone: +94 771321321</li>
+        <li>Email: info@radiantmedical.com</li>
+        <li>Email: support@radiantmedical.com</li>
+      </ul>
+    </div>
+
+    <!-- Social Media Icons on the Right -->
+    <div>
+      <a href="#" style="margin: 0 10px;"><img src="images/facebook icon.webp" alt="Facebook" style="height: 30px;"></a>
+      <a href="#" style="margin: 0 10px;"><img src="images/x icon.webp" alt="Twitter" style="height: 30px;"></a>
+      <a href="#" style="margin: 0 10px;"><img src="images/instergram icon.webp" alt="Instagram" style="height: 30px;"></a>
+      <a href="#" style="margin: 0 10px;"><img src="images/linked in logo.webp" alt="LinkedIn" style="height: 30px;"></a>
+    </div>
+  </div>
+</footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const hamburger = document.querySelector('.hamburger');
+      const sidebar = document.querySelector('.sidebar');
+      const overlay = document.createElement('div'); // Create the overlay element
+      overlay.classList.add('overlay');
+      document.body.appendChild(overlay); // Add it to the document body
+  
+      hamburger.addEventListener('click', function() {
+        sidebar.classList.toggle('active');
+        overlay.classList.toggle('active'); // Toggle the overlay when the sidebar is toggled
+      });
+  
+      // Close the sidebar if overlay is clicked
+      overlay.addEventListener('click', function() {
+        sidebar.classList.remove('active');
+        overlay.classList.remove('active');
+      });
+    });
+  </script>
+
+
+
+  
+
+</body>
+</html>

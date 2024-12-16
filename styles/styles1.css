@@ -1,0 +1,440 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.wrapper {
+  margin-left: 15%; /* 15% left margin */
+  margin-top: 7%; /* 7% top margin */
+  padding: 0 10px;
+}
+
+.wrapper .top_navbar {
+  width: calc(100% - 20px);
+  height: 60px;
+  display: flex;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.wrapper .top_navbar .hamburger {
+  width: 70px;
+  height: 100%;
+  background: #2e4ead;
+  padding: 15px 17px;
+  border-top-left-radius: 20px;
+  cursor: pointer;
+}
+
+.wrapper .top_navbar .hamburger div {
+  width: 35px;
+  height: 4px;
+  background: #92a6e2;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.wrapper .top_navbar .top_menu {
+  width: calc(100% - 70px);
+  height: 100%;
+  background: #fff;
+  border-top-right-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .top_navbar .top_menu .logo {
+  height: 100%;
+}
+
+.wrapper .top_navbar .top_menu .logo img {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+
+.wrapper .top_navbar .top_menu ul {
+  display: flex;
+}
+
+.wrapper .top_navbar .top_menu ul li a {
+  display: block;
+  margin: 0 10px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border: 1px solid #2e4ead;
+  border-radius: 50%;
+  color: #2e4ead;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.wrapper .top_navbar .top_menu ul li a:hover {
+  background: #4360b5;
+  color: #fff;
+}
+
+.wrapper .sidebar {
+  position: fixed;
+  top: 70px;
+  left: 10px;
+  background: #2e4ead;
+  width: 200px;
+  height: calc(100% - 80px);
+  border-bottom-left-radius: 20px;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.wrapper .sidebar ul li a {
+  display: block;
+  padding: 20px;
+  color: #92a6e2;
+  margin-bottom: 1px;
+  white-space: nowrap;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active {
+  background: #4360b5;
+  color: #fff;
+}
+
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #0056b3; /* Ocean Blue */
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+/* Video Section */
+div > video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff; /* Keep text white for contrast with the video */
+  background: none; /* Remove the semi-transparent background */
+}
+
+.overlay p {
+  margin: 5px 0;
+}
+
+/* Welcome Section */
+.welcome-section {
+  background: #e6f7ff;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.welcome-section h1 {
+  font-size: 2rem;
+  color: #004085;
+}
+
+/* What We Offer Section */
+.what-we-offer,
+.what-we-do,
+.our-rating,
+.top-doctors {
+  background: #fff;
+  margin: 20px auto;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.what-we-offer .content,
+.what-we-do p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.what-we-offer img,
+.what-we-do img,
+.our-rating img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+/* Section Headings */
+section h1 {
+  font-size: 2rem;
+  color: #0056b3;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Lists */
+ul, ol {
+  margin: 0;
+  padding: 0 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+ul li,
+ol li {
+  margin: 8px 0;
+}
+
+/* Footer Styles */
+footer {
+  background: #0056b3;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1rem;
+}
+
+
+/* Footer Styling */
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  border-top: 2px solid #007bff;
+}
+
+footer .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+footer .content img {
+  height: 50px;
+}
+
+footer .contact {
+  text-align: center;
+}
+
+footer .contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .contact ul li {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+footer .social-media {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer .social-media a {
+  margin: 0 10px;
+}
+
+footer .social-media img {
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+footer .social-media img:hover {
+  transform: scale(1.1);
+}
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+
+  .wrapper {
+    margin-left: 0; /* Remove the left margin */
+    margin-top: 15%; /* Adjust top margin if needed */
+  }
+
+  .container {
+    margin: auto; /* Center-align the container for mobile */
+    padding: 10px; /* Add some padding for better spacing */
+  }
+
+  /* Top Navbar */
+  .top_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff; /* White navbar */
+    position: relative;
+  }
+
+  /* Hamburger Menu */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 10; /* Ensure it is above other elements */
+  }
+
+  .hamburger div {
+    width: 30px;
+    height: 4px;
+    background-color: #e8eaf0; /* Hamburger color */
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+
+  /* Logo positioned in the center but on the right of hamburger */
+  .logo {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo img {
+    max-height: 50px;
+  }
+
+  /* Top Menu with Icons */
+  .top_menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .top_menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .top_menu ul li {
+    margin-left: 20px;
+  }
+
+  .top_menu ul li a {
+    color: #2e4ead;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    z-index: 5;
+  }
+
+  .sidebar ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .sidebar ul li {
+    margin: 20px 0;
+  }
+
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #2e4ead;
+    font-size: 18px;
+  }
+
+  /* Active Sidebar (visible when clicked) */
+  .sidebar.active {
+    display: block;
+    transform: translateX(0);
+  }
+  h1 {
+    font-size: 1.8rem; /* Adjusted heading font size for mobile */
+  }
+
+  /* Video Section */
+  .overlay {
+    font-size: 1.2rem; /* Slightly smaller text on mobile */
+  }
+
+  /* Welcome Section */
+  .welcome-section {
+    padding: 20px; /* Reduced padding for better mobile layout */
+  }
+
+  /* What We Offer Section */
+  .what-we-offer,
+  .what-we-do,
+  .our-rating,
+  .top-doctors {
+    padding: 20px;
+    margin: 15px auto;
+    width: 90%; /* Ensures content doesn't overflow */
+  }
+
+  /* Section Headings */
+  section h1 {
+    font-size: 1.8rem;
+  }
+
+  /* Lists */
+  ul, ol {
+    padding-left: 10px;
+  }
+}

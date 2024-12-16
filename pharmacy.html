@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon_package/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon_package/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon_package/favicon-16x16.png">
+<link rel="manifest" href="./favicon_package/site.webmanifest">
+<link rel="mask-icon" href="./favicon_package/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles2.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js" defer></script>
+    <title>Radiant Medical Center</title>
+</head>
+<body>
+    <div class="wrapper">
+  
+        <div class="top_navbar">
+          <div class="hamburger">
+             <div class="one"></div>
+             <div class="two"></div>
+             <div class="three"></div>
+          </div>
+          <div class="top_menu">
+              <div class="logo">
+                  <img src="images/Screenshot 2024-09-03 at 12.00.51 PM.png" alt="LOGO">
+              </div>
+              <ul>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li> <!-- Cart Icon -->
+                <li><a href="#"><i class="fas fa-user"></i></a></li>
+              </ul>
+          </div>
+        </div>
+        
+        <div class="sidebar">
+          <ul>
+            <li><a href="index.html"><span class="icon"><span class="title">Home</span></a></li>
+            <li><a href="services.html"><span class="icon"><span class="title">Services</span></a></li>
+            <li><a href="doctors.html"><span class="icon"><span class="title">Doctors</span></a></li>
+            <li><a href="consultaion.html"><span class="icon"><span class="title">Consultation</span></a></li>
+            <li><a href="pharmacy.html" class="active"><span class="icon"><span class="title">Pharmacy</span></a></li>
+            <li><a href="careers.html"><span class="icon"><span class="title">Careers</span></a></li>
+            <li><a href="about.html"><span class="icon"><span class="title">About us</span></a></li>
+          </ul>
+        </div>
+
+
+       
+
+<div id="medicines">
+    <!-- Analgesics Section -->
+    <section class="medicine-section">
+        <h2>Analgesics</h2>
+        <div class="medicine-grid">
+            <div class="medicine-item">
+                <img src="images/medicine/Paracetamol.jpg" alt="Paracetamol">
+                <h3>Paracetamol</h3>
+                <p>$10.99</p>
+                <button onclick="addToCart('Paracetamol', 10.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Aspirin.webp" alt="Aspirin">
+                <h3>Aspirin</h3>
+                <p>$12.99</p>
+                <button onclick="addToCart('Aspirin', 12.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Ibuprofen.jpg" alt="Ibuprofen">
+                <h3>Ibuprofen</h3>
+                <p>$8.99</p>
+                <button onclick="addToCart('Ibuprofen', 8.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Codeine.jpg" alt="Codeine">
+                <h3>Codeine</h3>
+                <p>$14.99</p>
+                <button onclick="addToCart('Codeine', 14.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Morphine.jpg" alt="Morphine">
+                <h3>Morphine</h3>
+                <p>$15.99</p>
+                <button onclick="addToCart('Morphine', 15.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Oxycodone.webp" alt="Oxycodone">
+                <h3>Oxycodone</h3>
+                <p>$18.99</p>
+                <button onclick="addToCart('Oxycodone', 18.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Hydrocodone.jpg" alt="Hydrocodone">
+                <h3>Hydrocodone</h3>
+                <p>$20.99</p>
+                <button onclick="addToCart('Hydrocodone', 20.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Fentanyl.jpeg" alt="Fentanyl">
+                <h3>Fentanyl</h3>
+                <p>$30.99</p>
+                <button onclick="addToCart('Fentanyl', 30.99)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Antibiotics Section -->
+    <section class="medicine-section">
+        <h2>Antibiotics</h2>
+        <div class="medicine-grid">
+            <div class="medicine-item">
+                <img src="images/medicine/Amoxicillin.jpg" alt="Amoxicillin">
+                <h3>Amoxicillin</h3>
+                <p>$9.99</p>
+                <button onclick="addToCart('Amoxicillin', 9.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Ciprofloxacin.jpeg" alt="Ciprofloxacin">
+                <h3>Ciprofloxacin</h3>
+                <p>$13.99</p>
+                <button onclick="addToCart('Ciprofloxacin', 13.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Clindamycin.jpeg" alt="Clindamycin">
+                <h3>Clindamycin</h3>
+                <p>$11.99</p>
+                <button onclick="addToCart('Clindamycin', 11.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Azithromycin.jpg" alt="Azithromycin">
+                <h3>Azithromycin</h3>
+                <p>$15.99</p>
+                <button onclick="addToCart('Azithromycin', 15.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Doxycycline.jpg" alt="Doxycycline">
+                <h3>Doxycycline</h3>
+                <p>$12.99</p>
+                <button onclick="addToCart('Doxycycline', 12.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/cephalexin-capsules-ip.jpeg" alt="Cephalexin">
+                <h3>Cephalexin</h3>
+                <p>$10.99</p>
+                <button onclick="addToCart('Cephalexin', 10.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Levofloxacin.webp" alt="Levofloxacin">
+                <h3>Levofloxacin</h3>
+                <p>$14.99</p>
+                <button onclick="addToCart('Levofloxacin', 14.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Metronidazole.jpg" alt="Metronidazole">
+                <h3>Metronidazole</h3>
+                <p>$16.99</p>
+                <button onclick="addToCart('Metronidazole', 16.99)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Antidepressants Section -->
+    <section class="medicine-section">
+        <h2>Antidepressants</h2>
+        <div class="medicine-grid">
+            <div class="medicine-item">
+                <img src="images/medicine/fluoxetine-10mg-tablet.png" alt="Fluoxetine">
+                <h3>Fluoxetine</h3>
+                <p>$9.99</p>
+                <button onclick="addToCart('Fluoxetine', 9.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Sertraline.jpg" alt="Sertraline">
+                <h3>Sertraline</h3>
+                <p>$11.99</p>
+                <button onclick="addToCart('Sertraline', 11.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Citalopram.png" alt="Citalopram">
+                <h3>Citalopram</h3>
+                <p>$10.99</p>
+                <button onclick="addToCart('Citalopram', 10.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Escitalopram.jpg" alt="Escitalopram">
+                <h3>Escitalopram</h3>
+                <p>$13.99</p>
+                <button onclick="addToCart('Escitalopram', 13.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Paroxetine.jpeg" alt="Paroxetine">
+                <h3>Paroxetine</h3>
+                <p>$12.99</p>
+                <button onclick="addToCart('Paroxetine', 12.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Duloxetine.webp" alt="Duloxetine">
+                <h3>Duloxetine</h3>
+                <p>$14.99</p>
+                <button onclick="addToCart('Duloxetine', 14.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Amitriptyline.jpg" alt="Amitriptyline">
+                <h3>Amitriptyline</h3>
+                <p>$15.99</p>
+                <button onclick="addToCart('Amitriptyline', 15.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Mirtazapine.jpg" alt="Mirtazapine">
+                <h3>Mirtazapine</h3>
+                <p>$17.99</p>
+                <button onclick="addToCart('Mirtazapine', 17.99)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Antihistamines Section -->
+    <section class="medicine-section">
+        <h2>Antihistamines</h2>
+        <div class="medicine-grid">
+            <div class="medicine-item">
+                <img src="images/medicine/Diphenhydramine.jpg" alt="Diphenhydramine">
+                <h3>Diphenhydramine</h3>
+                <p>$5.99</p>
+                <button onclick="addToCart('Diphenhydramine', 5.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Loratadine.jpg" alt="Loratadine">
+                <h3>Loratadine</h3>
+                <p>$7.99</p>
+                <button onclick="addToCart('Loratadine', 7.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Cetirizine.jpg" alt="Cetirizine">
+                <h3>Cetirizine</h3>
+                <p>$6.99</p>
+                <button onclick="addToCart('Cetirizine', 6.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Fexofenadine.jpg" alt="Fexofenadine">
+                <h3>Fexofenadine</h3>
+                <p>$8.99</p>
+                <button onclick="addToCart('Fexofenadine', 8.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Chlorpheniramine.jpg" alt="Chlorpheniramine">
+                <h3>Chlorpheniramine</h3>
+                <p>$5.49</p>
+                <button onclick="addToCart('Chlorpheniramine', 5.49)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Promethazine.webp" alt="Promethazine">
+                <h3>Promethazine</h3>
+                <p>$6.49</p>
+                <button onclick="addToCart('Promethazine', 6.49)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Desloratadine.jpeg" alt="Desloratadine">
+                <h3>Desloratadine</h3>
+                <p>$7.49</p>
+                <button onclick="addToCart('Desloratadine', 7.49)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Levocetirizine.webp" alt="Levocetirizine">
+                <h3>Levocetirizine</h3>
+                <p>$8.49</p>
+                <button onclick="addToCart('Levocetirizine', 8.49)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Antihypertensives Section -->
+    <section class="medicine-section">
+        <h2>Antihypertensives</h2>
+        <div class="medicine-grid">
+            <div class="medicine-item">
+                <img src="images/medicine/Amlodipine.jpg" alt="Amlodipine">
+                <h3>Amlodipine</h3>
+                <p>$9.99</p>
+                <button onclick="addToCart('Amlodipine', 9.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Lisinopril.jpg" alt="Lisinopril">
+                <h3>Lisinopril</h3>
+                <p>$11.99</p>
+                <button onclick="addToCart('Lisinopril', 11.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Losartan.jpeg" alt="Losartan">
+                <h3>Losartan</h3>
+                <p>$12.99</p>
+                <button onclick="addToCart('Losartan', 12.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Ramipril.jpg" alt="Ramipril">
+                <h3>Ramipril</h3>
+                <p>$14.99</p>
+                <button onclick="addToCart('Ramipril', 14.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Enalapril.webp" alt="Enalapril">
+                <h3>Enalapril</h3>
+                <p>$15.99</p>
+                <button onclick="addToCart('Enalapril', 15.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Diltiazem.jpeg" alt="Diltiazem">
+                <h3>Diltiazem</h3>
+                <p>$16.99</p>
+                <button onclick="addToCart('Diltiazem', 16.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Verapamil.jpg" alt="Verapamil">
+                <h3>Verapamil</h3>
+                <p>$17.99</p>
+                <button onclick="addToCart('Verapamil', 17.99)">Add to Cart</button>
+            </div>
+            <div class="medicine-item">
+                <img src="images/medicine/Furosemide.jpeg" alt="Furosemide">
+                <h3>Furosemide</h3>
+                <p>$19.99</p>
+                <button onclick="addToCart('Furosemide', 19.99)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="script.js"></script>
+
+
+
+<!-- Recommended Medicine Section -->
+<div class="recommended_doctors">
+  <h2>Most popular medicine</h2>
+  <div class="doctor">
+    <img src="images/pharmacy/ACNE SAL- BAR 100g Rs. 890.00 .jpg" alt="ACNE SAL BAR">
+    <div class="doctor_desc">ACNE INSTENT STOPER MLW CKR325 BAR 100g Rs. 890.00</div>
+  </div>
+  <div class="doctor">
+    <img src="images/pharmacy/ACTION NUTRITIONAL FOOD DRINK 400g Rs. 1,700.00.jpg" alt="ACTION NUTRITIONAL">
+    <div class="doctor_desc">ACTION NUTRITIONAL FOOD DRINK 400g Rs. 1,700.00</div>
+  </div>
+  <div class="doctor">
+    <img src="images/pharmacy/APPETON WEIGHT GAIN 450g - CHOCOLATE Rs. 10,876.00 .jpg" alt="APPETON WEIGHT GAIN">
+    <div class="doctor_desc">APPETON WEIGHT GAIN 450g - CHOCOLATE Rs. 10,876.00</div>
+  </div>
+</div>
+
+
+  
+
+  <footer style="background-color: #f8f9fa; padding: 20px 0; border-top: 2px solid #007bff;">
+    <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: auto;">
+      <!-- Logo on the Left -->
+      <div>
+        <img src="images/Screenshot 2024-09-03 at 12.00.51 PM.png" alt="Radiant Medical Center Logo" style="height: 50px;">
+      </div>
+  
+      <!-- Contact Information in the Center -->
+      <div style="text-align: center;">
+        <h3 style="margin-bottom: 10px;">Contact Us</h3>
+        <ul style="list-style-type: none; padding: 0; margin: 0;">
+          <li>Phone: +94 771321321</li>
+          <li>Phone: +94 771321321</li>
+          <li>Email: info@radiantmedical.com</li>
+          <li>Email: support@radiantmedical.com</li>
+        </ul>
+      </div>
+  
+      <!-- Social Media Icons on the Right -->
+      <div>
+        <a href="#" style="margin: 0 10px;"><img src="images/facebook icon.webp" alt="Facebook" style="height: 30px;"></a>
+        <a href="#" style="margin: 0 10px;"><img src="images/x icon.webp" alt="Twitter" style="height: 30px;"></a>
+        <a href="#" style="margin: 0 10px;"><img src="images/instergram icon.webp" alt="Instagram" style="height: 30px;"></a>
+        <a href="#" style="margin: 0 10px;"><img src="images/linked in logo.webp" alt="LinkedIn" style="height: 30px;"></a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const hamburger = document.querySelector('.hamburger');
+      const sidebar = document.querySelector('.sidebar');
+      const overlay = document.createElement('div'); // Create the overlay element
+      overlay.classList.add('overlay');
+      document.body.appendChild(overlay); // Add it to the document body
+  
+      hamburger.addEventListener('click', function() {
+        sidebar.classList.toggle('active');
+        overlay.classList.toggle('active'); // Toggle the overlay when the sidebar is toggled
+      });
+  
+      // Close the sidebar if overlay is clicked
+      overlay.addEventListener('click', function() {
+        sidebar.classList.remove('active');
+        overlay.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
